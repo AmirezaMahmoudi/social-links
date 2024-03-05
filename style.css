@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-Black);
+}
+main {
+    display: flex;
+    flex-flow: column ;
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    padding: 25px;
+}
+.author {
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.author img {
+    border-radius: 50%;
+    width: 81px;
+    height: 81px;
+    margin-top: 20px;
+}
+.author h1 {
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 600;
+}
+.author h2 {
+    color: var(--Green);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.author p {
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.link{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 15px;
+}
+.link-item{
+    background-color: var(--Grey);
+    padding: 10px;
+    border-radius: 10px;
+}
+.link-item {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--White);
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.link-item:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    transition: all 0.2s ease-in-out;
+}
+.attribution {
+    font-size: 16px;
+    color: var(--White);
+    text-align: center;
+    margin-top: 15px;
+ }
+.attribution a {
+    color: var(--Green)
+}
